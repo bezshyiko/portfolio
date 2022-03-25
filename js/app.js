@@ -6335,25 +6335,62 @@
         duration: 1,
         ease: "Power4.out"
     }, "-=1");
-    console.log("ff");
-    const columns = document.querySelectorAll(".mod-2");
-    const mod = document.querySelector(".mod-1");
-    columns.forEach((element => {
-        element.addEventListener("mouseover", (function(e) {
-            element.classList.add("_active");
-            if (element.closest(".mod-2")) {
-                mod.style.width = "100px";
-                mod.classList.add("_active");
-            }
-        }));
-        element.addEventListener("mouseout", (function(e) {
-            element.classList.remove("_active");
-            if (element.closest(".mod-2")) {
-                mod.style.width = "250px";
-                mod.classList.remove("_active");
-            }
-        }));
-    }));
+    gsapWithCSS.to(".top-about__title", {
+        scrollTrigger: {
+            trigger: ".top-about__title"
+        },
+        translateY: 0,
+        opacity: 1,
+        duration: .5,
+        delay: .2
+    });
+    gsapWithCSS.to(".top-about__photo", {
+        scrollTrigger: {
+            trigger: ".top-about__photo"
+        },
+        scale: 1,
+        duration: .9,
+        delay: .4
+    });
+    gsapWithCSS.to(".bottom-about__story", {
+        scrollTrigger: {
+            trigger: ".bottom-about__story"
+        },
+        translateY: 0,
+        opacity: 1,
+        duration: .9,
+        delay: .4
+    });
+    gsapWithCSS.to(".bottom-about__tools", {
+        scrollTrigger: {
+            trigger: ".bottom-about__tools"
+        },
+        translateY: 0,
+        opacity: 1,
+        duration: .9,
+        delay: .4
+    });
+    gsapWithCSS.to(".story", {
+        scrollTrigger: {
+            trigger: ".story"
+        },
+        opacity: 1,
+        duration: 1
+    });
+    gsapWithCSS.to(".tools", {
+        scrollTrigger: {
+            trigger: ".tools"
+        },
+        opacity: 1,
+        duration: 1
+    });
+    gsapWithCSS.to(".contact", {
+        scrollTrigger: {
+            trigger: ".contact"
+        },
+        opacity: 1,
+        duration: 1
+    });
     window["FLS"] = true;
     isWebp();
 })();
