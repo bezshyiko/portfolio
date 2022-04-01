@@ -10539,14 +10539,6 @@ PERFORMANCE OF THIS SOFTWARE.
             duration: .5,
             delay: .2
         });
-        gsapWithCSS.to(".top-about__photo", {
-            scrollTrigger: {
-                trigger: ".top-about__photo"
-            },
-            scale: 1,
-            duration: .9,
-            delay: 0
-        });
         gsapWithCSS.to(".bottom-about__text", {
             scrollTrigger: {
                 trigger: ".bottom-about__text"

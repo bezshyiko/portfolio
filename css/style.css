@@ -22,7 +22,7 @@
 [class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: "icomoon";
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -35,74 +35,92 @@
 }
 
 .icon-css:before {
+  font-family: "icomoon";
   content: "\e90a";
 }
 
 .icon-email:before {
+  font-family: "icomoon";
   content: "\e90d";
 }
 
 .icon-arrow:before {
+  font-family: "icomoon";
   content: "\e90b";
 }
 
 .icon-right-long:before {
+  font-family: "icomoon";
   content: "\e90c";
 }
 
 .icon-bem:before {
+  font-family: "icomoon";
   content: "\e909";
 }
 
 .icon-Facebook:before {
+  font-family: "icomoon";
   content: "\e903";
 }
 
 .icon-Instagram:before {
+  font-family: "icomoon";
   content: "\e904";
 }
 
 .icon-linkedin:before {
+  font-family: "icomoon";
   content: "\e905";
 }
 
 .icon-phone:before {
+  font-family: "icomoon";
   content: "\e906";
 }
 
 .icon-telegram:before {
+  font-family: "icomoon";
   content: "\e907";
 }
 
 .icon-viber:before {
+  font-family: "icomoon";
   content: "\e908";
 }
 
 .icon-javascript:before {
+  font-family: "icomoon";
   content: "\e90f";
 }
 
 .icon-sass:before {
+  font-family: "icomoon";
   content: "\e900";
 }
 
 .icon-webpack:before {
+  font-family: "icomoon";
   content: "\e901";
 }
 
 .icon-gulp:before {
+  font-family: "icomoon";
   content: "\e902";
 }
 
 .icon-github:before {
+  font-family: "icomoon";
   content: "\eab0";
 }
 
 .icon-wordpress:before {
+  font-family: "icomoon";
   content: "\eab4";
 }
 
 .icon-html:before {
+  font-family: "icomoon";
   content: "\eae5";
 }
 
@@ -1077,9 +1095,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
 }
 
 .about .top-about__photo img {
@@ -1130,15 +1145,15 @@ h6 {
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@supports (font-size: clamp( 8.75rem , 8.2954545455rem  +  2.2727272727vw , 10rem )) {
+@supports (font-size: clamp( 6.875rem , 5.7386363636rem  +  5.6818181818vw , 10rem )) {
   .about .bottom-about__numbers {
-    font-size: clamp( 8.75rem , 8.2954545455rem  +  2.2727272727vw , 10rem );
+    font-size: clamp( 6.875rem , 5.7386363636rem  +  5.6818181818vw , 10rem );
   }
 }
 
-@supports not (font-size: clamp( 8.75rem , 8.2954545455rem  +  2.2727272727vw , 10rem )) {
+@supports not (font-size: clamp( 6.875rem , 5.7386363636rem  +  5.6818181818vw , 10rem )) {
   .about .bottom-about__numbers {
-    font-size: calc(8.75rem + 1.25 * (100vw - 20rem) / 55);
+    font-size: calc(6.875rem + 3.125 * (100vw - 20rem) / 55);
   }
 }
 
@@ -1153,7 +1168,7 @@ h6 {
   -webkit-transform: translateY(100px);
       -ms-transform: translateY(100px);
           transform: translateY(100px);
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 1.25rem;
 }
 
 @supports (font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem )) {
@@ -1192,13 +1207,14 @@ h6 {
 .about .bottom-about__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2.5rem 1fr;
-  -ms-grid-columns: 1fr 2.5rem 1fr 2.5rem 1fr 2.5rem 1fr;
-      grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
 }
 
 .about .bottom-about__element {
+  font-size: 1.5rem;
+  font-family: "Raleway";
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1556,6 +1572,56 @@ h6 {
 
   .about .bottom-about__row {
     position: relative;
+    margin: 0px 0px 0 0px;
+    padding: 0;
+  }
+
+  .about .bottom-about__story {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .about .bottom-about__column {
+    padding: 0;
+  }
+
+  .about .bottom-about__name {
+    margin: 0px 0px 0.625rem 0px;
+  }
+
+  .about .bottom-about__text {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .about .bottom-about__tools {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .about .bottom-about__list {
+    gap: 1.875rem;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about .bottom-about__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .item-projects {
@@ -1576,6 +1642,14 @@ h6 {
   .item-projects__btn {
     width: 7.5rem;
     height: 2.5em;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .about .bottom-about__list {
+    gap: 1.875rem;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1620,10 +1694,6 @@ h6 {
   .about .bottom-about__row:hover {
     -webkit-box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.3);
-  }
-
-  .about .bottom-about__row:hover > .bottom-about__numbers {
-    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
 
   .about .bottom-about__element:nth-child(1):hover {
