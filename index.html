@@ -6,38 +6,43 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220325213448">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220401224249">
 	<link rel="shortcut icon" href="">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			<div class="preloader__top">
+				<span class="preloader__text">PORTFOLIO</span>
+			</div>
+			<div class="preloader__bottom">
+				<span class="preloader__text">PORTFOLIO</span>
+			</div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
 			</div>
 		</header>
 		<main class="page">
-			<section class="main block">
-				<div class="main__curtain curtain">
-					<div class="curtain__cover"></div>
-					<div class="curtain__text">Portfolio</div>
-					<div class="curtain__text double">Portfolio</div>
-				</div>
+			<section data-watch="navigator" class="main block">
 				<div class="main__content content-main">
 					<div class="content-main__container">
 						<div class="content-main__column">
 							<div class="content-main__row">
-								<h1 class="content-main__title">Frontend Developer</h1>
+								<h1 class="content-main__title">FrontEnd</h1>
 							</div>
 							<div class="content-main__row">
 								<p class="content-main__subtitle">
-									Hi! I'm Roman Bezshyiko, a Frontend Developer based in the Ukraine.
+									Hi! My name is Roman Bezshyiko. I'm a beginner FrontEnd Developer based in the Ukraine.
 								</p>
 							</div>
 							<div class="content-main__row">
-								<button class="content-main__btn button">view my works
+								<button data-goto=".projects" class="content-main__btn button">view my works
 									<div class="icon">
 										<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 											<path d="M0 0h24v24H0z" fill="none"></path>
@@ -67,7 +72,7 @@
 				<div class="about__container">
 					<div class="about__top top-about">
 						<div class="top-about__column">
-							<div class="top-about__title">I am a passionate software developer and ui/ux designer with akeen eye for details.</div>
+							<div class="top-about__title">My future is FrontEnd development.</div>
 						</div>
 						<div class="top-about__column">
 							<div class="top-about__photo">
@@ -77,30 +82,103 @@
 					</div>
 					<div class="about__bottom bottom-about">
 						<div class="bottom-about__row">
-							<div class="bottom-about__attribute story">01</div>
-							<div class="bottom-about__story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto nulla assumenda, autem facilis at rem aliquam adipisci porro quasi unde quibusdam? Id pariatur eaque, adipisci exercitationem repellat ea perferendis.
-								Dolor nesciunt ut id qui culpa accusamus enim laboriosam voluptates, nemo amet! Quia, mollitia perferendis minima dolore cum voluptates magnam vero facere ea, placeat, optio eum amet ipsum atque alias?</div>
+							<div class="bottom-about__story">
+								<div class="bottom-about__column">
+									<div class="bottom-about__numbers">01</div>
+									<div class="bottom-about__name">My story</div>
+								</div>
+								<div class="bottom-about__column">
+									<p class="bottom-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto nulla assumenda, autem facilis at rem aliquam adipisci porro quasi unde quibusdam? Id pariatur eaque, adipisci exercitationem repellat ea perferendis.
+										Dolor nesciunt ut id qui culpa accusamus enim laboriosam voluptates, nemo amet! Quia, mollitia perferendis minima dolore cum voluptates magnam vero facere ea, placeat, optio eum amet ipsum atque alias?</p>
+								</div>
+							</div>
 						</div>
 						<div class="bottom-about__row">
-							<div class="bottom-about__attribute tools">02</div>
-							<div class="bottom-about__tools">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto nulla assumenda, autem facilis at rem aliquam adipisci porro quasi unde quibusdam? Id pariatur eaque, adipisci exercitationem repellat ea perferendis.
-								Dolor nesciunt ut id qui culpa accusamus enim laboriosam voluptates, nemo amet! Quia, mollitia perferendis minima dolore cum voluptates magnam vero facere ea, placeat, optio eum amet ipsum atque alias?</div>
+							<div class="bottom-about__tools">
+								<div class="bottom-about__column">
+									<div class="bottom-about__numbers">02</div>
+									<div class="bottom-about__name">Tools</div>
+								</div>
+								<div class="bottom-about__columm">
+									<div class="bottom-about__text">
+										<ul class="bottom-about__list">
+											<li class="bottom-about__element icon-html">HTML</li>
+											<li class="bottom-about__element icon-css">CSS</li>
+											<li class="bottom-about__element icon-javascript">JavaScript</li>
+											<li class="bottom-about__element icon-gulp">Gulp</li>
+											<li class="bottom-about__element icon-webpack">Webpack</li>
+											<li class="bottom-about__element icon-wordpress">Wordpress</li>
+											<li class="bottom-about__element icon-bem">BEM</li>
+											<li class="bottom-about__element icon-sass">SASS</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="bottom-about__row">
-							<div class="bottom-about__attribute contact">03</div>
-							<div class="bottom-about__contact">
-								<div class="bottom-about__social social">
-									<a target="_blank" href="https://www.instagram.com/vadymbezshyiko/" class="social__instagram icon-instagram"></a>
-									<a href="" class="social__facebook icon-facebook"></a>
-									<a href="" class="social__viber icon-viber"></a>
-									<a href="" class="social__telegram icon-telegram"></a>
+							<div class="bottom-about__contacts">
+								<div class="bottom-about__column">
+									<div class="bottom-about__numbers">03</div>
+									<div class="bottom-about__name">Contacts</div>
 								</div>
-								<div class="bottom-about__phone">
-									<a class="icon-phone" href="tel:+380683029333">+380683029333</a>
+								<div class="bottom-about__column">
+									<div class="bottom-about__text">
+										<div class="bottom-about__social social">
+											<a target="_blank" href="https://www.instagram.com/r.bezshyiko/" class="social__instagram icon-Instagram"></a>
+											<a target="_blank" href="https://www.facebook.com/roman.bezshiyko" class="social__facebook icon-Facebook"></a>
+											<a target="_blank" href="viber://add?number=380683029333" class="social__viber icon-viber"></a>
+											<a target="_blank" href="https://t.me/bezshy" class="social__telegram icon-telegram"></a>
+										</div>
+										<div class="bottom-about__phone">
+											<a class="icon-phone" href="tel:+380683029333">+380683029333</a>
+										</div>
+										<div class="bottom-about__mail">
+											<a class="icon-email" href="mailto:r.bezshyiko@gmail.com">r.bezshyiko@gmail.com</a>
+										</div>
+									</div>
 								</div>
-								<div class="bottom-about__mail">
-									<a class="icon-telegram" href="mailto:r.bezshyiko@gmail.com">r.bezshyiko@gmail.com</a>
-								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="projects block">
+				<div class="projects__container">
+					<div class="projects__items">
+						<div class="projects__item item-projects">
+							<div class="item-projects__column">
+								<a target="_blank" href="https://bezshyiko.github.io/massage/" class="item-projects__photo">
+									<picture><source srcset="img/works/1.webp" type="image/webp"><img src="img/works/1.jpg" alt=""></picture>
+								</a>
+							</div>
+							<div class="item-projects__column">
+								<h2 class="item-projects__title">Landing page</h2>
+								<a target="_blank" href="https://bezshyiko.github.io/massage/" class="item-projects__btn button">view
+									<div class="icon">
+										<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="projects__item item-projects">
+							<div class="item-projects__column">
+								<a target="_blank" href="https://bezshyiko.github.io/coffeesite/" class="item-projects__photo">
+									<picture><source srcset="img/works/2.webp" type="image/webp"><img src="img/works/2.jpg" alt=""></picture>
+								</a>
+							</div>
+							<div class="item-projects__column">
+								<h2 class="item-projects__title">Online-shop</h2>
+								<a target="_blank" href="https://bezshyiko.github.io/coffeesite/" class="item-projects__btn button">view
+									<div class="icon">
+										<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+										</svg>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -109,20 +187,30 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__contacts">
+					<div class="footer__social social">
+						<a target="_blank" href="https://www.instagram.com/vadymbezshyiko/" class="social__instagram icon-Instagram"></a>
+						<a href="" class="social__facebook icon-Facebook"></a>
+						<a href="" class="social__viber icon-viber"></a>
+						<a href="" class="social__telegram icon-telegram"></a>
+					</div>
+					<div class="footer__phone">
+						<a class="icon-phone" href="tel:+380683029333">+380683029333</a>
+					</div>
+					<div class="footer__mail">
+						<a class="icon-email" href="mailto:r.bezshyiko@gmail.com">r.bezshyiko@gmail.com</a>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<span>© 2022</span>
+					<span>Bezshyiko Roman</span>
+				</div>
+				<button data-goto=".main" class="footer__btn icon-right-long"></button>
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220325213448"></script>
+
+	<script src="js/app.min.js?_v=20220401224249"></script>
 </body>
 
 </html>
