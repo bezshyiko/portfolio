@@ -360,10 +360,6 @@ h6 {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translate(20px, 50px);
-      -ms-transform: translate(20px, 50px);
-          transform: translate(20px, 50px);
-  opacity: 0;
 }
 
 .social__facebook {
@@ -380,13 +376,6 @@ h6 {
   height: 2.5rem;
   border-radius: 50%;
   background-color: #fff;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translate(20px, 50px);
-      -ms-transform: translate(20px, 50px);
-          transform: translate(20px, 50px);
-  opacity: 0;
 }
 
 .social__viber {
@@ -406,10 +395,6 @@ h6 {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translate(20px, 50px);
-      -ms-transform: translate(20px, 50px);
-          transform: translate(20px, 50px);
-  opacity: 0;
 }
 
 .social__telegram {
@@ -429,10 +414,40 @@ h6 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #fff;
-  -webkit-transform: translate(20px, 50px);
-      -ms-transform: translate(20px, 50px);
-          transform: translate(20px, 50px);
-  opacity: 0;
+}
+
+.header {
+  padding: 1.25rem 0px 0px 0px;
+}
+
+.header__lang {
+  width: 3.75rem;
+  height: 1.625rem;
+  background-color: #444;
+  border-radius: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.1875rem;
+}
+
+.header__item {
+  cursor: pointer;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.header__item:first-child {
+  color: #444;
+  background-color: #fff;
+  padding: 0.125rem;
+  border-radius: 60px;
 }
 
 /*
