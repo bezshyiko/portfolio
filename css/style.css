@@ -1095,9 +1095,18 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 
 .about .top-about__photo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50px;
   width: 70%;
   -o-object-fit: cover;
@@ -1126,6 +1135,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
 }
 
 .about .bottom-about__column {
@@ -1164,10 +1177,6 @@ h6 {
 
 .about .bottom-about__text {
   z-index: 1;
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-      -ms-transform: translateY(100px);
-          transform: translateY(100px);
   padding: 0px 0px 0px 1.25rem;
 }
 
@@ -1202,6 +1211,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
 }
 
 .about .bottom-about__list {
@@ -1234,6 +1247,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
 }
 
 @supports (margin-bottom: clamp( 0.3125rem , 0.0852272727rem  +  1.1363636364vw , 0.9375rem )) {
@@ -1429,6 +1446,9 @@ h6 {
 
 .item-projects__photo {
   cursor: pointer;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 
 .item-projects__photo img {
@@ -1443,6 +1463,10 @@ h6 {
   margin: 0px 0px 1.25rem 0px;
   text-transform: uppercase;
   font-weight: 800;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
 }
 
 @supports (font-size: clamp( 1.75rem , 1.4318181818rem  +  1.5909090909vw , 2.625rem )) {
@@ -1459,6 +1483,10 @@ h6 {
 
 .item-projects__btn {
   width: 8.75rem;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
 }
 
 @media (max-width: 64em) {
