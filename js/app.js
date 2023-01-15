@@ -315,10 +315,7 @@
                 progress.style.width = `${count / lengthImg * 100}%`;
                 count += .01;
                 setTimeout((() => {
-                    if (count <= lengthImg) {
-                        startProgress();
-                        console.log(count);
-                    } else document.documentElement.classList.add("loaded");
+                    if (count <= lengthImg) startProgress(); else document.documentElement.classList.add("loaded");
                 }));
             }
             startProgress();
